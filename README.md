@@ -1,6 +1,6 @@
 # myo-osc-relay
 
-Relays data from Thalmic Labs Myo armband to Supercollider (or any other softwarE) via OSC. 
+Relays data from Thalmic Labs Myo armband to Supercollider (or any other program) via OSC. 
 
 Compiles on OS X with Xcode. 
 
