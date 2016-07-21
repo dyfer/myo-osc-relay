@@ -13,6 +13,7 @@ Robert Twomey - roberttwomey.com
 # parameters
 
 Parameters are set by command line options: 
+'''
  -v verbose text output
  -a ADDR OSC send address
  -p PORT OSC send port
@@ -22,10 +23,10 @@ Parameters are set by command line options:
  -accel send acceleration
  -gyro send gyroscope
  -linaccel send linear acceleration
-
+'''
  example: 
 
- ./myo-osc-relay -v -emg -pose -quat -accel -gyro -linaccel
+ '''./myo-osc-relay -v -emg -pose -quat -accel -gyro -linaccel'''
 
 # os x / xcode versions
 
