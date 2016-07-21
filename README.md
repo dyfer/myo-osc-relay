@@ -12,7 +12,7 @@ Robert Twomey - roberttwomey.com
 
 # Usage
 
-after buildin, the executable is in:
+after building, the executable can be found in:
 ```
 myo-osc-relay/DerivedData/myo-osc-relay/Build/Products/Debug
 ```
