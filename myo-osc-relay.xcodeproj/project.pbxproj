@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4D04ADE519266DE6006E1C84 /* myo-osc-relay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D04ADE419266DE6006E1C84 /* myo-osc-relay.cpp */; };
 		E26922171D36914900BF3CD5 /* DeviceCollector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E26922151D36914900BF3CD5 /* DeviceCollector.cpp */; };
+		E284A2CA1D409945002D481A /* myo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E2C2263A1D408959002AA73C /* myo.framework */; };
 		E2C226331D40894A002AA73C /* IpEndpointName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2C2261D1D40894A002AA73C /* IpEndpointName.cpp */; };
 		E2C226341D40894A002AA73C /* NetworkingUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2C226221D40894A002AA73C /* NetworkingUtils.cpp */; };
 		E2C226351D40894A002AA73C /* UdpSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2C226231D40894A002AA73C /* UdpSocket.cpp */; };
@@ -26,6 +27,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				E284A2CA1D409945002D481A /* myo.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
