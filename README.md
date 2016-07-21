@@ -12,8 +12,10 @@ Robert Twomey - roberttwomey.com
 
 # Usage
 
-after buildin, the executable is in: 
-```myo-osc-relay/DerivedData/myo-osc-relay/Build/Products/Debug```
+after buildin, the executable is in:
+```
+myo-osc-relay/DerivedData/myo-osc-relay/Build/Products/Debug
+```
 
 Parameters are set by command line options: 
 ```
