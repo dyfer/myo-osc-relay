@@ -20,8 +20,8 @@ myo-osc-relay/DerivedData/myo-osc-relay/Build/Products/Debug
 Parameters are set by command line options: 
 ```
  -v, verbose text output
- -a ADDR, OSC send address
- -p PORT, OSC send port
+ -a ADDR, OSC destination address
+ -p PORT, OSC destination port
  -emg, send EMG data
  -pose, send pose data
  -quat, send orientation quaternion
