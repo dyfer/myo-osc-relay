@@ -10,7 +10,10 @@ Developed for UW Center for Digital Arts and Experimental Media (DXARTS), July 2
 
 Robert Twomey - roberttwomey.com
 
-# parameters
+# Usage
+
+after buildin, the executable is in: 
+```myo-osc-relay/DerivedData/myo-osc-relay/Build/Products/Debug```
 
 Parameters are set by command line options: 
 ```
@@ -29,19 +32,20 @@ Parameters are set by command line options:
 
 ```./myo-osc-relay -v -emg -pose -quat -accel -gyro -linaccel```
 
-# os x / xcode versions
+# Versions
 
+## OS X / Xcode
 xcode Version 7.3 (7D175)
 
 os x 10.11.5
 
-# myo versions
+## Myo
 
-myo connect Version 1.0.1
+myo connect Version 1.0.1 https://s3.amazonaws.com/thalmicdownloads/mac/1.0.1/MyoConnect.dmg
 
-firmware 1.5.1970
+myo firmware is 1.5.1970
 
-# external library 
+## oscpack
 
 oscpack http://www.rossbencina.com/code/oscpack
 
