@@ -14,15 +14,15 @@ Robert Twomey - roberttwomey.com
 
 Parameters are set by command line options: 
 ```
- -v 	verbose text output
- -a 	ADDR OSC send address
- -p 	PORT OSC send port
- -emg 	send EMG data
- -pose 	send pose data
- -quat 	send orientation quaternion
- -accel send acceleration
- -gyro	send gyroscope
- -linaccel	send linear acceleration
+ -v, verbose text output
+ -a ADDR, OSC send address
+ -p PORT, OSC send port
+ -emg, send EMG data
+ -pose, send pose data
+ -quat, send orientation quaternion
+ -accel, send acceleration
+ -gyro, send gyroscope
+ -linaccel, send linear acceleration
 ```
 
  example: 
