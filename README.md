@@ -1,6 +1,16 @@
 # myo-osc-relay
 
-Compiles on os x. Relays data from Thalmic Labs Myo armband to Supercollider via OSC. 
+Relays data from Thalmic Labs Myo armband to Supercollider via OSC. 
+
+Compiles on os x. 
+
+Versions and dependencies are described below. 
+
+Developed for UW Center for Digital Arts and Experimental Media (DXARTS)
+
+July 2016 - Robert Twomey - roberttwomey.com
+
+# parameters
 
 Parameters are set by command line options: 
  -v verbose text output
