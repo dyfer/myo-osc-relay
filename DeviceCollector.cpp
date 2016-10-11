@@ -189,6 +189,9 @@ void Device::sendOsc(const char* address, int port, bool bSendQuaternion, bool b
     << onArm
     << getWhichArmAsString().c_str()
     << currentPose.toString().c_str();
+    if(bSendEmg)
+        for (size_t i = 0; i < emgSamples.size(); i++)
+            p << static_cast<int>(emgSamples[i]);
     if(bSendQuaternion)
         p << q.x() << q.y() << q.z() << q.w();
     if(bSendAccel)
@@ -197,9 +200,6 @@ void Device::sendOsc(const char* address, int port, bool bSendQuaternion, bool b
         p << gyro.x() << gyro.y() << gyro.z();
     if(bSendLinearAccel)
         p << linear_accel.x() << linear_accel.y() << linear_accel.z();
-    if(bSendEmg)
-        for (size_t i = 0; i < emgSamples.size(); i++)
-            p << static_cast<int>(emgSamples[i]);
     
     p << osc::EndMessage
     << osc::EndBundle;
