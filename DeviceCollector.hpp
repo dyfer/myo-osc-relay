@@ -102,7 +102,7 @@ public:
     void setGravity(float val);
     
     void print();
-    void sendOsc(const char* address, int port, bool bSendQuaternion, bool bSendAccel, bool bSendGyro, bool bSendLinearAccel);
+    void sendOsc(const char* address, int port, bool bSendQuaternion, bool bSendAccel, bool bSendGyro, bool bSendLinearAccel, bool bSendEmg);
     
     
     

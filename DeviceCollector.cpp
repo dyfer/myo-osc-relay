@@ -145,7 +145,7 @@ void Device::print()
     std::cout << std::flush;
 }
 
-void Device::sendOsc(const char* address, int port, bool bSendQuaternion, bool bSendAccel, bool bSendGyro, bool bSendLinearAccel) {
+void Device::sendOsc(const char* address, int port, bool bSendQuaternion, bool bSendAccel, bool bSendGyro, bool bSendLinearAccel, bool bSendEmg) {
     // message format:
     // /myo, id, isconnected, onarm, whicharm, isunlocked, pose,
     //   quaternion-x, qy, qz, qw
@@ -197,6 +197,10 @@ void Device::sendOsc(const char* address, int port, bool bSendQuaternion, bool b
         p << gyro.x() << gyro.y() << gyro.z();
     if(bSendLinearAccel)
         p << linear_accel.x() << linear_accel.y() << linear_accel.z();
+    if(bSendEmg)
+        for (size_t i = 0; i < emgSamples.size(); i++)
+            p << static_cast<int>(emgSamples[i]);
+    
     p << osc::EndMessage
     << osc::EndBundle;
 //    << true << 23 << (float)3.1415 << "hello" << osc::EndMessage
@@ -428,7 +432,8 @@ void DeviceCollector::sendOsc(AppSettings settings) {
                             settings.bSendQuaternion,
                             settings.bSendAccel,
                             settings.bSendGyro,
-                            settings.bSendLinearAccel);
+                            settings.bSendLinearAccel,
+                            settings.bSendEmg);
     };
     
 }
