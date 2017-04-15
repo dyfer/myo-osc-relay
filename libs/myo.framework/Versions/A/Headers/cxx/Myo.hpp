@@ -64,6 +64,12 @@ public:
     libmyo_myo_t libmyoObject() const;
 
     /// @endcond
+    
+    //for MAC address
+    void setName(std::string &name);
+    const char *name() const;
+    void setMacAddress(std::string &mac);
+    const char *macAddress() const;
 
 private:
     Myo(libmyo_myo_t myo);
@@ -76,6 +82,10 @@ private:
     Myo& operator=(const Myo&);
 
     friend class Hub;
+    
+    //for MAC address
+    std::string _mac;
+    std::string _name;
 };
 
 } // namespace myo
