@@ -77,8 +77,8 @@ std::string Device::getWhichArmAsString() const {
 
 void Device::setWhichArm(myo::Arm v) { whichArm = v; }
 
-std::vector<int> Device::getEmgSamples() { return emgSamples; }
-void Device::setEmgSamples(std::vector<int> vals) {
+std::vector<uint> Device::getEmgSamples() { return emgSamples; }
+void Device::setEmgSamples(std::vector<uint> vals) {
     if ( emgSamples.size() == vals.size() ) {
         for ( int i=0; i<emgSamples.size(); i++ ) {
             emgSamples[i] = vals[i];

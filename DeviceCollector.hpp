@@ -83,8 +83,8 @@ public:
     std::string getWhichArmAsString() const;
     void setWhichArm(myo::Arm v) ;
     
-    std::vector<int> getEmgSamples() ;
-    void setEmgSamples(std::vector<int> vals);
+    std::vector<uint> getEmgSamples() ;
+    void setEmgSamples(std::vector<uint> vals);
     
     float getRoll();
     void setRoll(float v);
@@ -131,7 +131,7 @@ protected:
     
     Quaternion4f q;
     
-    std::vector<int> emgSamples;
+    std::vector<uint> emgSamples;
     
     float gravity = 0.98;
     
