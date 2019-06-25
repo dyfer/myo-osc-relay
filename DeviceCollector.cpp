@@ -185,7 +185,8 @@ void Device::sendOsc(const char* address, int port, bool bSendQuaternion, bool b
     p << osc::BeginBundleImmediate
     << osc::BeginMessage( "/myo" )
     << id
-    << isConnect
+//    << isConnect //rudimentary? replacing with MAC address
+    << myo->macAddress()
     << onArm
     << getWhichArmAsString().c_str()
     << currentPose.toString().c_str();
@@ -236,9 +237,9 @@ void DeviceCollector::onPair(myo::Myo* myo, uint64_t timestamp, myo::FirmwareVer
         devices.push_back(device);
         //        std::cout << "Paired with " << device->id << "." << std::endl;
 //        ofLog(OF_LOG_NOTICE, "Paired with myo " + ofToString(device->id));
-        cout << "Paired with myo " << device->id << endl;
-        device->myo->vibrate(myo::Myo::vibrationShort);
-        device->myo->vibrate(myo::Myo::vibrationMedium);
+        cout << "Paired with myo " << device->id << ", MAC: " << myo->macAddress() << endl;
+//        device->myo->vibrate(myo::Myo::vibrationShort);
+//        device->myo->vibrate(myo::Myo::vibrationMedium);
         
     }
 }
